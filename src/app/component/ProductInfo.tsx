@@ -30,7 +30,7 @@ function ProductInfo({ handleShow, data }: HeaderProps) {
     },
     dots: true,
     autoplay: true,
-    dotsClass: 'slick-dots slick-thumb',
+    dotsClass: 'slick-dots customsSlick',
     infinite: true,
     speed: 500,
     slidesToShow: 1,

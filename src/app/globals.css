@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-thumb li {
+.customsSlick li {
   width: 100px;
   height: 80px;
 }
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .slick-thumb li {
+  .customsSlick li {
     width: 50px;
     height: 40px;
   }
@@ -35,7 +35,7 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .slick-thumb li {
+  .customsSlick li {
     width: 70px;
     height: 55px;
   }
