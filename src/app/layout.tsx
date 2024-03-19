@@ -3,7 +3,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from './component/Header';
 import Navbar from './component/Navbar';
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,7 +23,8 @@ export default function RootLayout({
         <div className='relative w-full'>
           <Header />
           <Navbar />
-          <div className='absolute top-20 left-[20%] bg-slate-100 p-5 w-[80%]'>
+          <div className='absolute top-20 left-0 xl:left-[20%] bg-slate-100 px-5 w-[100%] xl:w-[80%] pb-96'>
+            {/* <p className='text-4xl py-5 font-medium'>Dashboard</p> */}
             {children}
           </div>
         </div>
