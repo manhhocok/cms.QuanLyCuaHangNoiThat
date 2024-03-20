@@ -30,7 +30,7 @@ function ProductInfo({ handleShow, data }: HeaderProps) {
     },
     dots: true,
     autoplay: true,
-    dotsClass: `${styles.customsSlick} customsSlick slick-dots`,
+    dotsClass: `${styles.customsSlick} ${styles.slick_dots} customsSlick slick-dots`,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
