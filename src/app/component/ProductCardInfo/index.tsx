@@ -4,8 +4,8 @@ import Image from 'next/image';
 import React from 'react';
 import { IoExitOutline } from 'react-icons/io5';
 import Slider from 'react-slick';
-import { ProductType } from '../type/product';
-
+import { ProductType } from '../../type/product';
+import styles from './ProductCardInfo.module.css';
 interface HeaderProps {
   handleShow: () => void;
   data?: ProductType;
@@ -30,7 +30,7 @@ function ProductInfo({ handleShow, data }: HeaderProps) {
     },
     dots: true,
     autoplay: true,
-    dotsClass: 'slick-dots customsSlick',
+    dotsClass: `${styles.customsSlick} customsSlick slick-dots`,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

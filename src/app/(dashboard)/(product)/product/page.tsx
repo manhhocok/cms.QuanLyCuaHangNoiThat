@@ -22,7 +22,7 @@ import {
   TbChevronRightPipe,
 } from 'react-icons/tb';
 import { RiLoader5Fill } from 'react-icons/ri';
-import ProductInfo from '@/app/component/ProductInfo';
+import ProductInfo from '@/app/component/ProductCardInfo';
 import AcceptModle from '@/app/component/AcceptModle';
 const Linkeerr = {
   path1: 'product',
