@@ -16,3 +16,17 @@ export type ProductType = {
   productType: ProductTypeType;
   category: CategoryType;
 };
+
+export type Productbody = {
+  listed_price: number;
+  price: number;
+  name: string;
+  dimensions: string;
+  available: string;
+  description: string;
+  image: string;
+  status: boolean;
+  material_id: number;
+  type_id: number;
+  category_id: number;
+};

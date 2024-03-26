@@ -5,6 +5,10 @@ import Header from './component/Header';
 import Navbar from './component/Navbar';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// import '@uploadthing/react/styles.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -30,6 +34,9 @@ export default function RootLayout({
       />
       <body className={inter.className}>
         <div className='relative w-full'>
+          <div className=''>
+            <ToastContainer />
+          </div>
           <Header />
           <Navbar />
           <div className='absolute top-20 left-0 xl:left-[20%] bg-slate-100 px-5 w-[100%] xl:w-[80%] pb-96'>
