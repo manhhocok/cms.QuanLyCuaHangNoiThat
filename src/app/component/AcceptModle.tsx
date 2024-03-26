@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 function AcceptModle({ handleAccept, handleExit, title }: HeaderProps) {
   return (
-    <div className='fixed w-full drop-shadow-lg flex justify-center z-50 top-0 left-0'>
+    <div className='fixed w-full drop-shadow-lg flex justify-center z-50 top-0 left-0 bg-black/[0.4] pb-96'>
       <div className='bg-white w-[350px] my-[200px] rounded-lg p-5'>
         <div className='w-full flex justify-center font-semibold text-lg text-center'>
           {title}

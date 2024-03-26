@@ -26,6 +26,7 @@ import GoiY1 from '../../public/goi-y1.jpg';
 import GoiY2 from '../../public/goi-y2.jpg';
 import GoiY3 from '../../public/goi-y3.jpg';
 import GoiY4 from '../../public/goi-y4.jpg';
+import LoadingImg from '../../public/load-img.png';
 
 export const images = {
   Logo: Logo,
@@ -56,4 +57,5 @@ export const images = {
   GoiY2: GoiY2,
   GoiY3: GoiY3,
   GoiY4: GoiY4,
+  LoadingImg: LoadingImg,
 };

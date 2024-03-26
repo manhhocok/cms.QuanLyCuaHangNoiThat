@@ -17,14 +17,12 @@ function ProductInfo({ handleShow, data }: HeaderProps) {
     customPaging: function (i: number) {
       return (
         <li>
-          <a>
-            <Image
-              alt='product-item-img'
-              src={img[i]}
-              fill
-              objectFit='cover'
-            />
-          </a>
+          <Image
+            alt='product-item-img'
+            src={data?.image.split(' ')[i] || images.LoadingImg}
+            fill
+            objectFit='cover'
+          />
         </li>
       );
     },
@@ -57,46 +55,27 @@ function ProductInfo({ handleShow, data }: HeaderProps) {
         <div className='grid grid-cols-1 lg:grid-cols-2 pb-20 gap-x-3'>
           <div className=''>
             <Slider {...settings}>
-              <div className='w-full h-[180px] md:w-[300px] md:h-[200px] xl:w-[400px] xl:h-[300px] object-fill px-10'>
-                <Image
-                  alt='product-item-img'
-                  src={images.Test5}
-                  className=''
-                  width={700}
-                  height={500}
-                  objectFit='cover'
-                />
-              </div>
-              <div className=' w-full h-[180px] md:w-[300px] md:h-[200px] xl:w-[400px] xl:h-[300px] object-fill px-10'>
-                <Image
-                  alt='product-item-img'
-                  src={images.Test8}
-                  className=''
-                  width={700}
-                  height={500}
-                  objectFit='cover'
-                />
-              </div>
-              <div className='w-full h-[180px] md:w-[300px] md:h-[200px] xl:w-[400px] xl:h-[300px] object-fill px-10'>
-                <Image
-                  alt='product-item-img'
-                  src={images.Test9}
-                  className=''
-                  width={700}
-                  height={500}
-                  objectFit='cover'
-                />
-              </div>
-              <div className='w-full h-[180px] md:w-[300px] md:h-[200px] xl:w-[400px] xl:h-[300px] object-fill px-10'>
-                <Image
-                  alt='product-item-img'
-                  src={images.Test7}
-                  className=''
-                  width={700}
-                  height={500}
-                  objectFit='cover'
-                />
-              </div>
+              {data?.image ? (
+                data?.image.split(' ').map((img, idx) => {
+                  return (
+                    <div
+                      key={idx}
+                      className='w-full h-[180px] md:w-[300px] md:h-[200px] xl:w-[400px] xl:h-[300px] object-fill px-10'
+                    >
+                      <Image
+                        alt='product-item-img'
+                        src={img}
+                        className=''
+                        width={700}
+                        height={500}
+                        objectFit='cover'
+                      />
+                    </div>
+                  );
+                })
+              ) : (
+                <></>
+              )}
             </Slider>
           </div>
           <div className='w-full grid grid-cols-2 gap-y-5 pt-5 text-zinc-700'>

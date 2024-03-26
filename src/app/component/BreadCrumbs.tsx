@@ -8,7 +8,7 @@ function BreadCrumbs({
 }) {
   return (
     <div>
-      <nav
+      {/* <nav
         className='flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-700'
         aria-label='Breadcrumb'
       >
@@ -81,7 +81,7 @@ function BreadCrumbs({
             </div>
           </li>
         </ol>
-      </nav>
+      </nav> */}
     </div>
   );
 }
